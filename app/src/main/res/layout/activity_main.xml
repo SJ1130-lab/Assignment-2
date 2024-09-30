@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Saree Material"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/materialRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/silkRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silk" />
+
+            <RadioButton
+                android:id="@+id/cottonRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cotton" />
+
+            <RadioButton
+                android:id="@+id/georgetteRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Georgette" />
+        </RadioGroup>
+
+
+        <CheckBox
+            android:id="@+id/expressShippingCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Express Shipping"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate this Saree"
+            android:textSize="18sp"
+            android:paddingTop="16dp" />
+
+        <RatingBar
+            android:id="@+id/sareeRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Discount Level"
+            android:textSize="18sp"
+            android:paddingTop="16dp" />
+
+        <SeekBar
+            android:id="@+id/discountSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="50" />
+
+        <TextView
+            android:id="@+id/discountPercentageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0% Discount"
+            android:paddingTop="8dp" />
+
+        <Switch
+            android:id="@+id/giftWrapSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Gift Wrap"
+            android:paddingTop="16dp"
+            android:minWidth="200dp"
+            android:minHeight="48dp"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="Check"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>
